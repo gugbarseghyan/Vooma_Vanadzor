@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VOMA Vanadzor</title>
     <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css"">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/script.js" defer></script>
     <script src="js/en.js" defer></script>
+    <script src="js/slide.js" defer></script>
 </head>
 
 <body>
@@ -21,6 +26,7 @@
             <a href="#about">About us</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact us</a>
+            <a href="#aboutLessons"><button class="btn purple">Register</button></a>
             <a href="#support"><button class="btn">Support Us</button></a>
             <!-- Languages -->
             <div class="selectedLanguage" id="ddMenu">
@@ -47,6 +53,8 @@
             <a href="#about">About us</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact us</a>
+            <a href="#aboutLessons"><button class="btn purple">Register</button></a>
+            <a href="#aboutLessons"><button class="btn">Support Us</button></a>
             <!-- <a href=""><button class="btn">Support Us</button></a> -->
             <!-- Languages for Mobile -->
             <div class="langs2">
@@ -59,12 +67,15 @@
 <!------------------------------- Jump to top ---------------------------->
     <a href="#home" class="jumpToTop"><i class="fas fa-arrow-up"></i></a>
 
-<!------------------------------- Home ---------------------------->
+    <!------------------------------- Home ---------------------------->
     <div id="home">
-        <div class="slider-frame">
-            <div class="slide-images">
-
-                <div class="img-continer slide1">
+        <div class="container">
+            <div class="slideArrows">
+                <i class="fas fa-arrow-alt-circle-left" id="btnLeft"></i>
+                <i class="fas fa-arrow-alt-circle-right" id="btnRight"></i>
+            </div>
+            <div class="slide">
+                <div class="slidepage slide1">
                     <div class="black">
                         <div class="content">
                             <h1>About us</h1><hr><p>VOMA (Art of staying alive) <br> military-patriotic NGO was founded... <br>
@@ -73,46 +84,51 @@
                     </div>
                 </div>
 
-                <div class="img-continer slide2">
+                <div class="slidepage slide2">
                     <div class="black">
                         <div class="content">
-                            <h1>Courses </h1><hr><p>Courses include: <br> Physical training... <br><a href="#aboutLessons">Read more</a></p>
+                            <h1>Courses </h1><hr><p>Courses include: 
+                                <br> Physical training... <br><a href="#aboutLessons">Read more</a></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="img-continer slide3">
+                <div class="slidepage slide3">
                     <div class="black">
                         <div class="content">
-                            <h1>Contact us</h1><hr><p>Contact us <br> Support types:... <br><a href="#contact">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="img-continer slide4">
-                    <div class="black">
-                        <div class="content">
-                            <h1>#Country-Fortress</h1><hr><p>According to VOMA's ideology<br> Every settlement in Armenia should be... <br><a href="#aboutErkir">Read more</a></p>
+                            <h1>Contact us</h1><hr><p>Contact us 
+                                <br> Support types:... <br><a href="#contact">Read more</a></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="img-continer slide5">
+                <div class="slidepage slide4">
                     <div class="black">
                         <div class="content">
-                            <h1>#Nation-Army</h1><hr><p>Our goal is to have 100 to  <br> 600 thousand fighting citizens... <br><a href="#aboutAzg">Read more</a></p>
+                            <h1>#Country-Fortress</h1><hr><p>According to VOMA's ideology
+                                <br> Every settlement in Armenia should be... <br><a href="#aboutErkir">Read more</a></p>
                         </div>
                     </div>
                 </div>
 
+                <div class="slidepage slide5">
+                    <div class="black">
+                        <div class="content">
+                            <h1>#Nation-Army</h1><hr><p>Our goal is to have 100 to  <br> 600 thousand fighting citizens... <br>
+                                <a href="#aboutAzg">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="contentForMobile">
-            <img src="./img/InShot_20210719_184012585.jpg">
-            <h3>VOMA (Art of staying alive) <br> Vanadzor</h3>
-            <p>military-patriotic NGO was founded 2014 year ․․․ <br><br><a href="#about">Read more</a></p></p>
+        <div class="dots">
+            <div class="dot activeDot" id="dot1"></div>
+            <div class="dot" id="dot2"></div>
+            <div class="dot" id="dot3"></div>
+            <div class="dot" id="dot4"></div>
+            <div class="dot" id="dot5"></div>
         </div>
+
     </div>
 
 <!------------------------------- About us ---------------------------->
@@ -144,23 +160,26 @@
                 </div>
             </div>
         </div><br>
+        <div id="aboutLessons" class="aboutLessons">
+            <h2 id="aboutLessons">Courses include:</h2>
+            <p class="paragraph" style="text-align: left;">
+                🔰 physical training,<br>
+                🔰 cold weapon,<br>
+                🔰 tactical training, <br>
+                🔰 fire preparation, <br>
+                🔰 mountaineering, <br>
+                🔰 extreme first aid, <br>
+                🔰 military cartography and orientation, <br>
+                🔰 military engineering training, <br>
+                🔰 survival skills, <br>
+                🔰campaigns, jumps, <br>
+                🔰 Azerbaijani, <br>
+                🔰 media literacy,<br>  
+                🔰 information wars․․
+            </p>
 
-        <h2 id="aboutLessons">Courses include:</h2>
-        <p class="paragraph" style="text-align: left;">
-            🔰 physical training,<br>
-            🔰 cold weapon,<br>
-            🔰 tactical training, <br>
-            🔰 fire preparation, <br>
-            🔰 mountaineering, <br>
-            🔰 extreme first aid, <br>
-            🔰 military cartography and orientation, <br>
-            🔰 military engineering training, <br>
-            🔰 survival skills, <br>
-            🔰campaigns, jumps, <br>
-            🔰 Azerbaijani, <br>
-            🔰 media literacy,<br>  
-            🔰 information wars․․
-        </p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePPrT7DgrIvYvql-pl7VQUG6km-qe1oujXlETvV0MY1q55OA/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
         <div class="part2" id="aboutAzg">
             <div class="video-container">
@@ -251,21 +270,26 @@
                     <a target="blank" href="https://t.me/vomavanadzor" title="Telegram channel"><button class="btn purple socialBtn"><i class="fab fa-telegram-plane"></i></button></a>
                 </div>
             </div>
-            <!-- <img class="sendMessage" src="img/mail icon.png"> -->
-            <form action="https://formspree.io/f/mgedpqwo" method="POST">
-                <input type="text" name="fullname" placeholder="Your name" required>
-                <input type="email" name="email"  placeholder="Your E-mail" required>
-                <textarea name="message" cols="30" rows="10"  required placeholder="Message"></textarea>
-                    <button id="send" class="btn purple">Send</button>
-            </form>
+          
+            <div class="lessonform">
+                <form action="https://formspree.io/f/mgedpqwo" method="POST">
+                    <input type="text" name="fullname" placeholder="Your name" required>
+                    <input type="email" name="email"  placeholder="Your E-mail" required>
+                    <textarea name="message" cols="30" rows="10"  required placeholder="Message"></textarea>
+                        <button id="send" class="btn purple">Send</button>
+                </form>
+            </div>
+
         </div>
     </div>
 
+
+<!-------------------- Support Us ------------------>
     <div id="support">
         <h1>Support us</h1><hr>       
         <div class="conContainer">
             <div class="contacts">
-                <p>
+                <p style="text-align: center;">
                     <i class="fas fa-donate"></i> Support types՝<br>
                     Idram: 565382372 <br><br>
                    «VOMA Vanadzor»  military-patriotic NGO  <br>
@@ -275,8 +299,10 @@
                     1510053545770158 RUB – Russian Ruble <br><br>
                     ARCA: 5473391010003101 Arman Kocharyan <br>
                 </p>
+            </div>
         </div>
     </div>
+    
 <!------------------------------- Footer ---------------------------->
     <footer>
         <div class="black">

@@ -1,0 +1,46 @@
+/*--------------------------- Contact/Support --------------------------*/
+#contact, #support{ text-align: center;padding: 50px 0px; }
+#contact h1, #support h1{font-size: 40px; }
+#contact .conContainer{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px 70px 0px;
+}
+.lessonform{ width: 500px; }
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px 10px;
+    box-shadow: 0px 0px 15px #3338;
+}
+form input, form textarea, form button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #555;
+    resize: vertical;
+    margin: 10px 0px;
+    font-size: 20px;
+    max-height: 300px;
+    max-width: 500px;
+}
+#contact .contacts{
+    text-align: left;
+    font-size: 20px;
+    width: 300px;
+}
+#contact .contacts i{
+    padding: 10px;
+    font-size: 25px;
+    color: #56124F;
+}
+.socialMedia{ display: flex; }
+#contact .socialMedia i{ color: white; }
+#support p {font-size: 20px;}

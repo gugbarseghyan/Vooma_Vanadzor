@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ВОМА Ванадзор</title>
     <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css"">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/script.js" defer></script>
     <script src="js/ru.js" defer></script>
+    <script src="js/slide.js" defer></script>
 </head>
 
 <body>
@@ -21,6 +26,7 @@
             <a href="#about">О нас</a>
             <a href="#gallery">Галерея</a>
             <a href="#contact">Связаться с нами</a>
+            <a href="#support"><button class="btn purple">Pегистр</button></a>
             <a href="#support"><button class="btn">Поддерживать нас</button></a>
             <!-- Languages -->
             <div class="selectedLanguage" id="ddMenu">
@@ -47,6 +53,8 @@
             <a href="#about">О нас</a>
             <a href="#gallery">Галерея</a>
             <a href="#contact">Связаться с нами</a>
+            <a href="#support"><button class="btn purple">Pегистр</button></a>
+            <a href="#support"><button class="btn">Поддерживать нас</button></a>
             <!-- <a href=""><button class="btn">Поддерживать нас</button></a> -->
             <!-- Languages for Mobile -->
             <div class="langs2">
@@ -60,60 +68,68 @@
     <a href="#home" class="jumpToTop"><i class="fas fa-arrow-up"></i></a>
 
 <!------------------------------- Home ---------------------------->
-    <div id="home">
-        <div class="slider-frame">
-            <div class="slide-images">
-
-                <div class="img-continer slide1">
-                    <div class="black">
-                        <div class="content">
-                            <h1>О нас</h1><hr><p>ВОМА (Искусство оставаться в живых) <br> создана военно-патриотическая общественная организация... <br>
-                                <a href="#about">Читать больше</a></p>
-                        </div>
+<div id="home">
+    <div class="container">
+        <div class="slideArrows">
+            <i class="fas fa-arrow-alt-circle-left" id="btnLeft"></i>
+            <i class="fas fa-arrow-alt-circle-right" id="btnRight"></i>
+        </div>
+        <div class="slide">
+            <div class="slidepage slide1">
+                <div class="black">
+                    <div class="content">
+                        <h1>О нас</h1><hr><p>ВОМА (Искусство оставаться в живых) <br> создана военно-патриотическая общественная организация... <br>
+                            <a href="#about">Читать больше</a></p>
                     </div>
                 </div>
+            </div>
 
-                <div class="img-continer slide2">
-                    <div class="black">
-                        <div class="content">
-                            <h1>Kурсы </h1><hr><p>Курсы включают: <br> Физическая культура... <br><a href="#aboutLessons">Читать больше</a></p>
-                        </div>
+            <div class="slidepage slide2">
+                <div class="black">
+                    <div class="content">
+                        <h1>Kурсы </h1><hr><p>Курсы включают: <br> Физическая культура... <br>
+                            <a href="#aboutLessons">Читать больше</a></p>
                     </div>
                 </div>
+            </div>
 
-                <div class="img-continer slide3">
-                    <div class="black">
-                        <div class="content">
-                            <h1>Связаться с нами</h1><hr><p>Связаться с нами <br> Типы поддержки:... <br><a href="#contact">Читать больше</a></p>
-                        </div>
+            <div class="slidepage slide3">
+                <div class="black">
+                    <div class="content">
+                        <h1>Связаться с нами</h1><hr><p>Связаться с нами <br> Типы поддержки:... <br>
+                            <a href="#contact">Читать больше</a></p>
                     </div>
                 </div>
-                
-                <div class="img-continer slide4">
-                    <div class="black">
-                        <div class="content">
-                            <h1>#Страна-крепость</h1><hr><p>Согласно идеологии ВОМА<br> Каждое поселение в Армении должно быть... <br><a href="#aboutErkir">Читать больше</a></p>
-                        </div>
+            </div>
+
+            <div class="slidepage slide4">
+                <div class="black">
+                    <div class="content">
+                        <h1>#Страна-крепость</h1><hr><p>Согласно идеологии ВОМА<br> Каждое поселение в Армении должно быть... <br>
+                            <a href="#aboutErkir">Читать больше</a></p>
                     </div>
                 </div>
+            </div>
 
-                <div class="img-continer slide5">
-                    <div class="black">
-                        <div class="content">
-                            <h1>#Нация-Армия</h1><hr><p>Наша цель - иметь от 100 до <br> 600 тысяч воюющих граждан... <br><a href="#aboutAzg">Читать больше</a></p>
-                        </div>
+            <div class="slidepage slide5">
+                <div class="black">
+                    <div class="content">
+                        <h1>#Нация-Армия</h1><hr><p>Наша цель - иметь от 100 до <br> 600 тысяч воюющих граждан... <br>
+                            <a href="#aboutAzg">Читать больше</a></p>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <div class="contentForMobile">
-            <img src="./img/InShot_20210719_184012585.jpg">
-            <h3>ВОМА (Искусство оставаться в живых) <br> Ванадзор</h3>
-            <p>военно-патриотическая общественная организация основана в 2014 году ․․․ <br><br><a href="#about">Читать больше</a></p></p>
-        </div>
     </div>
+    <div class="dots">
+        <div class="dot activeDot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+        <div class="dot" id="dot5"></div>
+    </div>
+
+</div>
 
 <!------------------------------- About us ---------------------------->
     <div id="about">
@@ -144,23 +160,26 @@
                 </div>
             </div>
         </div><br>
-
         <h2 id="aboutLessons">Курсы включают:</h2>
-        <p class="paragraph" style="text-align: left;">
-            🔰 физическая подготовка,<br>
-            🔰 холодное оружие,<br>
-            🔰 тактическая подготовка, <br>
-            🔰 пожарная подготовка, <br>
-            🔰 альпинизм, <br>
-            🔰 экстренная первая помощь, <br>
-            🔰 военная картография и ориентирование, <br>
-            🔰 военно-инженерная подготовка, <br>
-            🔰 навыки выживания, <br>
-            🔰походы, прыжки, <br>
-            🔰 Азербайджанская, <br>
-            🔰 медиаграмотность,<br>
-            🔰 информационные войны․․
-         </p>
+        <div id="aboutLessons" class="aboutLessons"></div>
+            <p class="paragraph" style="text-align: left;">
+                🔰 физическая подготовка,<br>
+                🔰 холодное оружие,<br>
+                🔰 тактическая подготовка, <br>
+                🔰 пожарная подготовка, <br>
+                🔰 альпинизм, <br>
+                🔰 экстренная первая помощь, <br>
+                🔰 военная картография и ориентирование, <br>
+                🔰 военно-инженерная подготовка, <br>
+                🔰 навыки выживания, <br>
+                🔰походы, прыжки, <br>
+                🔰 Азербайджанская, <br>
+                🔰 медиаграмотность,<br>
+                🔰 информационные войны․․
+            </p>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePPrT7DgrIvYvql-pl7VQUG6km-qe1oujXlETvV0MY1q55OA/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
         <div class="part2" id="aboutAzg">
             <div class="video-container">
@@ -251,21 +270,26 @@
                     <a target="blank" href="https://t.me/vomavanadzor" title="Telegram канал"><button class="btn purple socialBtn"><i class="fab fa-telegram-plane"></i></button></a>
                 </div>
             </div>
-            <!-- <img class="sendMessage" src="img/mail icon.png"> -->
-            <form action="https://formspree.io/f/mgedpqwo" method="POST">
-                <input type="text" name="fullname" placeholder="Ваш имя" required>
-                <input type="email" name="email"  placeholder="Ваш адрес электронной почты" required>
-                <textarea name="message" cols="30" rows="10"  required placeholder="Сообщение"></textarea>
-                    <button id="send" class="btn purple">Отправить</button>
-            </form>
+            
+            <div class="lessonform">
+                <form action="https://formspree.io/f/mgedpqwo" method="POST">
+                    <input type="text" name="fullname" placeholder="Ваш имя" required>
+                    <input type="email" name="email"  placeholder="Ваш адрес электронной почты" required>
+                    <textarea name="message" cols="30" rows="10"  required placeholder="Сообщение"></textarea>
+                        <button id="send" class="btn purple">Отправить</button>
+                </form>
+            </div>
+
         </div>
     </div>
 
+
+<!-------------------- Support Us ------------------>
     <div id="support">
         <h1>Поддерживать нас</h1><hr>
         <div class="conContainer">
             <div class="contacts">
-                <p>
+                <p style="text-align: center;">
                     <i class="fas fa-donate"></i> Типы поддержки՝<br>
                     Идрам: 565382372 <br><br>
                    Военно-патриотическая общественная организация «ВОМА Ванадзор» <br>
@@ -275,8 +299,10 @@
                     1510053545770158 RUB – Российский рубль <br><br>
                     ARCA: 5473391010003101 Arman Kocharyan <br>
                 </p>
+            </div>
         </div>
     </div>
+    
 <!------------------------------- Footer ---------------------------->
     <footer>
         <div class="black">

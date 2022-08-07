@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ՈՄԱ Վանաձոր</title>
     <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css"">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
     <script src="js/script.js" defer></script>
     <script src="js/arm.js" defer></script>
+    <script src="js/slide.js" defer></script>
 </head>
 
 <body>
@@ -22,6 +26,7 @@
             <a href="#about">Մեր Մասին</a>
             <a href="#gallery">Նկարներ</a>
             <a href="#contact">Հետադարձ Կապ</a>
+            <a href="#aboutLessons"><button class="btn  purple">Գրանցվել</button></a>
             <a href="#support"><button class="btn">Աջակցել Մեզ</button></a>
             <!-- Languages -->
             <div class="selectedLanguage" id="ddMenu">
@@ -48,6 +53,8 @@
             <a href="#about">Մեր Մասին</a>
             <a href="#gallery">Նկարներ</a>
             <a href="#contact">Հետադարձ Կապ</a>
+            <a href="#aboutLessons"><button class="btn  purple">Գրանցվել</button></a>
+            <a href="#support"><button class="btn">Աջակցել Մեզ</button></a>
             <!-- <a href=""><button class="btn">Աջակցել Մեզ</button></a> -->
             <!-- Languages for Mobile -->
             <div class="langs2">
@@ -62,58 +69,66 @@
 
 <!------------------------------- Home ---------------------------->
     <div id="home">
-        <div class="slider-frame">
-            <div class="slide-images">
-
-                <div class="img-continer slide1">
+        <div class="container">
+            <div class="slideArrows">
+                <i class="fas fa-arrow-alt-circle-left" id="btnLeft"></i>
+                <i class="fas fa-arrow-alt-circle-right" id="btnRight"></i>
+            </div>
+            <div class="slide">
+                <div class="slidepage slide1">
                     <div class="black">
                         <div class="content">
-                            <h1>Մեր մասին</h1><hr><p>ՈՄԱ (Ողջ մնալու արվեստ) <br> ռազմահայրենասիրական ՀԿ-ն հիմնադրվել է... <br>
+                            <h1>ՄԵր Մասին</h1><hr><p>ՈՄԱ (Ողջ մնալու արվեստ) <br> ռազմահայրենասիրական ՀԿ-ն հիմնադրվել է... <br>
                                 <a href="#about">Կարդալ ավելին</a></p>
                         </div>
                     </div>
                 </div>
-
-                <div class="img-continer slide2">
+    
+                <div class="slidepage slide2">
                     <div class="black">
                         <div class="content">
-                            <h1>Դասընթացներ</h1><hr><p>Դասընթացները ներառում են՝ <br> 🔰ֆիզիկական պատրաստություն... <br><a href="#aboutLessons">Կարդալ ավելին</a></p>
+                            <h1>Դասընթացներ</h1><hr><p>Դասընթացները ներառում են՝ <br> 🔰ֆիզիկական պատրաստություն...<br>
+                                <a href="#aboutLessons">Կարդալ ավելին</a></p>
                         </div>
                     </div>
                 </div>
-
-                <div class="img-continer slide3">
+    
+                <div class="slidepage slide3">
                     <div class="black">
                         <div class="content">
-                            <h1>Կապ մեզ հետ</h1><hr><p>Հետադարձ Կապ <br> Նվիրատվության ձևեր՝... <br><a href="#contact">Կարդալ ավելին</a></p>
+                            <h1>Հետադարձ Կապ</h1><hr><p>Հետադարձ Կապ <br> Նվիրատվության ձևեր՝...  <br>
+                                <a href="#contact">Կարդալ ավելին</a></p>
                         </div>
                     </div>
                 </div>
-
-                <div class="img-continer slide4">
+    
+                <div class="slidepage slide4">
                     <div class="black">
                         <div class="content">
-                            <h1>#Երկիր-Ամրոց</h1><hr><p>Ըստ ՈՄԱ գաղափարախոսության <br> Հայաստանի յուրաքանչյուր բնակավայր պետք է լինի... <br><a href="#aboutErkir">Կարդալ ավելին</a></p>
+                            <h1>#Երկիր-Ամրոց</h1><hr><p>Ըստ ՈՄԱ գաղափարախոսության <br> Հայաստանի յուրաքանչյուր բնակավայր պետք է լինի...<br>
+                                <a href="#aboutErkir">Կարդալ ավելին</a></p>
                         </div>
                     </div>
                 </div>
-
-                <div class="img-continer slide5">
+    
+                <div class="slidepage slide5">
                     <div class="black">
                         <div class="content">
-                            <h1>#Ազգ-Բանակ</h1><hr><p>Մեր նպատակն է ունենալ 100-ից <br> 600 հազար մարտունակ քաղաքացի... <br><a href="#aboutAzg">Կարդալ ավելին</a></p>
+                            <h1>#Ազգ-Բանակ</h1><hr><p>Մեր նպատակն է ունենալ 100-ից <br> 600 հազար մարտունակ քաղաքացի... <br>
+                                <a href="#aboutAzg">Կարդալ ավելին</a></p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <div class="contentForMobile">
-            <img src="./img/InShot_20210719_184012585.jpg">
-            <h3>ՈՄԱ (Ողջ Մնալու Արվեստ) <br> Վանաձոր</h3>
-            <p>ռազմահայրենասիրական ՀԿ-ն հիմնադրվել է 2014 թվականին ․․․ <br><br><a href="#about">Կարդալ ավելին</a></p></p>
+        <div class="dots">
+            <div class="dot activeDot" id="dot1"></div>
+            <div class="dot" id="dot2"></div>
+            <div class="dot" id="dot3"></div>
+            <div class="dot" id="dot4"></div>
+            <div class="dot" id="dot5"></div>
         </div>
+
     </div>
 
 <!------------------------------- About us ---------------------------->
@@ -145,23 +160,26 @@
                 </div>
             </div>
         </div><br>
-
         <h2 id="aboutLessons">Դասընթացները ներառում են՝</h2>
-        <p class="paragraph" style="text-align: left;">
-            🔰ֆիզիկական պատրաստություն,<br>
-            🔰 սառը զենք,<br>
-            🔰 մարտավարական պատրաստություն, <br>
-            🔰 կրակային պատրաստություն, <br>
-            🔰 ալպինիզմ, <br>
-            🔰 էքստրեմալ առաջին բուժօգնություն, <br>
-            🔰 ռազմական քարտեզագրություն ու կողմնորոշում, <br>
-            🔰 ռազմաինժեներական պատրաստություն, <br>
-            🔰 գոյատևման հմտություններ, <br>
-            🔰 ռազմարշավներ, ցատկերթեր, <br>
-            🔰 ադրբեջաներեն, <br>
-            🔰 մեդիագրագիտություն,<br>  
-            🔰 ինֆորմացիոն պատերազմներ․․
-        </p>
+        <div id="aboutLessons" class="aboutLessons">
+            <p class="paragraph" style="text-align: left;">
+                🔰ֆիզիկական պատրաստություն,<br>
+                🔰 սառը զենք,<br>
+                🔰 մարտավարական պատրաստություն, <br>
+                🔰 կրակային պատրաստություն, <br>
+                🔰 ալպինիզմ, <br>
+                🔰 էքստրեմալ առաջին բուժօգնություն, <br>
+                🔰 ռազմական քարտեզագրություն ու կողմնորոշում, <br>
+                🔰 ռազմաինժեներական պատրաստություն, <br>
+                🔰 գոյատևման հմտություններ, <br>
+                🔰 ռազմարշավներ, ցատկերթեր, <br>
+                🔰 ադրբեջաներեն, <br>
+                🔰 մեդիագրագիտություն,<br>  
+                🔰 ինֆորմացիոն պատերազմներ․․
+            </p>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePPrT7DgrIvYvql-pl7VQUG6km-qe1oujXlETvV0MY1q55OA/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
         <div class="part2" id="aboutAzg">
             <div class="video-container">
@@ -243,7 +261,7 @@
             <div class="contacts">
                 <p>
                     <i class="fas fa-envelope"></i> vanadzor.voma@gmail.com <br>
-                    <i class="fas fa-phone"></i> +(374)-98-18-44-12 <br>
+                    <i class="fas fa-phone"></i>+(374)-55-11-44-12  <br>
                     <i class="fas fa-map-marked"></i></i> Ք․ Վանաձոր Մյասնիկյան 80 <br>
                 </p>
                 <div class="socialMedia">
@@ -252,7 +270,6 @@
                     <a target="blank" href="https://t.me/vomavanadzor" title="Տելեգրամյան ալիք"><button class="btn purple socialBtn"><i class="fab fa-telegram-plane"></i></button></a>
                 </div>
             </div>
-            <!-- <img class="sendMessage" src="img/mail icon.png"> -->
             
             <div class="lessonform">
                 <form action="https://formspree.io/f/mgedpqwo" method="POST">
@@ -286,41 +303,6 @@
         </div>
     </div>
 
-    <div class="dropdown-lessons-list">
-        <div class="object">
-            <button class="accordion">Եռամսյա դասընթաց Հունիս ամսին</button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-
-        <div class="object">
-            <button class="accordion">Եռամսյա դասընթաց Հուլիս ամսին</button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-
-        <div class="object">
-            <button class="accordion">Եռամսյա դասընթաց Սեպտեմբեր ամսին</button>
-            <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-    </div>
-      <div class="lessonform">
-        <form action="https://formspree.io/f/mdobrrrb" method="POST" class="col-xxl-3 col-md-11 m-auto">
-            <input type="text" name="Full_Name" class="form-control mt-2 btn_mer" id="exampleInputPassword1" placeholder="Name">
-            <input type="number" name="E-mail" class="form-control mt-2 btn_mer" id="exampleInputPassword1" placeholder="phone num">
-            <input type="Message" name="Phone_Num" class="form-control mt-2 btn_mer" id="exampleInputPassword1" placeholder="message">
-            <select name="Courses" class="form-select mt-2 btn_mer" aria-label="Default select example" aria-placeholder="Select">
-                <option value="Հուլիս">Հուլիս</option>
-                <option value="Հունիս">Հունիս</option>
-                <option value="Սեպտեմբեր">Սեպտեմբեր</option>
-            </select>
-            <button class="btn purple">Ուղարկել</button>
-          </form>
-      </div>
 <!------------------------------- Footer ---------------------------->
     <footer>
         <div class="black">
@@ -333,11 +315,11 @@
 
             <p>
                  vanadzor.voma@gmail.com <br>
-                 +(374)-98-18-44-12 <br>
+                 +(374)-55-11-44-12 <br>
                 Ք․ Վանաձոր Մյասնիկյան 80 <br>
             </p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1224.6897587153271!2d44.491090834428434!3d40.80824480789739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041bc0414c426b7%3A0xd4796df85ff750a4!2s80%20Myasnikyan%20St%2C%20Vanadzor%2C%20Armenia!5e0!3m2!1sen!2s!4v1648979152144!5m2!1sen!2s" width="300" height="150" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3020.265775196645!2d44.4813495!3d40.8001531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041bf8bc7c8010b%3A0xc13f4f5cee491f03!2z1YjVhNSxINWO1aHVttWh1bHVuNaAINWM1YAg1YDUvw!5e0!3m2!1sen!2s!4v1659861589350!5m2!1sen!2s" width="300" height="150" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <tlp>Developed by <a href="#">TLP</a></tlp>
         </div>
     </footer>
